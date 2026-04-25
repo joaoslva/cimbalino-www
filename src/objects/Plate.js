@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { HollowCylinder } from "./HollowCylinder.js";
+import { HollowCylinder } from "../primitives-plus/HollowCylinder.js";
 
 class Plate extends THREE.Object3D {
   constructor(baseRadius = 2.7, rimRadius = 4, height = 2) {

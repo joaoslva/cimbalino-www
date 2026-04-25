@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { Plate } from "./objects/Plate";
 import { Mug } from "./objects/Mug";
+import { Table } from "./furniture/Table";
 
 class Scene {
   constructor(app) {
@@ -18,12 +19,8 @@ class Scene {
     dirLight.castShadow = true;
     this.app.scene.add(dirLight);
 
-    // placeholder: add your objects here
-    const plate = new Plate();
-    //this.app.scene.add(plate);
-
-    const mug = new Mug();
-    this.app.scene.add(mug);
+    const table = new Table();
+    this.app.scene.add(table);
   }
 
   update() {

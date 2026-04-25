@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { HollowCylinder } from "./HollowCylinder.js";
+import { HollowCylinder } from "../primitives-plus/HollowCylinder.js";
 
 class Mug extends THREE.Object3D {
   constructor(baseRadius = 1.7, rimRadius = 2, height = 4) {
@@ -21,7 +21,7 @@ class Mug extends THREE.Object3D {
     this.add(mug.mesh);
 
     const handle = new THREE.Mesh(
-      new THREE.TorusGeometry(1.5, 0.25, 6, 5, Math.PI),
+      new THREE.TorusGeometry(1.5, 0.3, 6, 5, Math.PI),
       material
     );
     handle.rotateZ(-Math.PI / 2)
